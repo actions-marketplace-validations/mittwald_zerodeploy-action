@@ -21,6 +21,7 @@ GitHub composite action to build and deploy arbitrary repositories as containers
 | `node-version` | Node.js version to use | no | `24` |
 | `mittwald-cli-branch` | Branch of the mittwald CLI to clone | no | `feat/containerize-deploy` |
 | `container-deploy-repo` | URL of the container-deploy repository | no | `https://github.com/mittwald/container-deploy` |
+| `repo-subpath` | Subpath within the repository to deploy (e.g. `./services/api`), relative to the repository root | no | `.` |
 
 ## Example Workflow
 

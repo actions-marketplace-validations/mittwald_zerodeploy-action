@@ -138,4 +138,4 @@ runs:
       run: |
         cd ${{ inputs.repo-subpath }}
         echo "Deploying to Mittwald with project ID: ${{ inputs.mittwald-project-id }}"
-        node ./mittwald-cli/bin/run.js experimental deploy --project-id ${{ inputs.mittwald-project-id }}
+        node $GITHUB_WORKSPACE/mittwald-cli/bin/run.js experimental deploy --project-id ${{ inputs.mittwald-project-id }}
