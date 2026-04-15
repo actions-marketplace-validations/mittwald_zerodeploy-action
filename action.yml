@@ -20,6 +20,10 @@ inputs:
     description: 'URL of the container-deploy repository'
     required: false
     default: 'https://github.com/mittwald/container-deploy'
+  repo-subpath:
+    description: 'Subpath within the repository to deploy (e.g. ./services/api), relative to the repository root'
+    required: false
+    default: '.'
 
 runs:
   using: 'composite'
@@ -132,5 +136,6 @@ runs:
     - name: Deploy to Mittwald container hosting
       shell: bash
       run: |
+        cd ${{ inputs.repo-subpath }}
         echo "Deploying to Mittwald with project ID: ${{ inputs.mittwald-project-id }}"
         node ./mittwald-cli/bin/run.js experimental deploy --project-id ${{ inputs.mittwald-project-id }}
