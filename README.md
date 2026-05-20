@@ -1,4 +1,4 @@
-# rp-container-deploy-action
+# zerodeploy-action
 
 GitHub composite action to deploy arbitrary repositories to mittwald container hosting with close to zero configuration.
 
