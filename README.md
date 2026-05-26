@@ -64,8 +64,8 @@ jobs:
           } > .env
 
       - name: Deploy to Mittwald Container Hosting
-        uses: mittwald/rp-container-deploy-action@master
+        uses: mittwald/zerodeploy-action@master
         with:
           mittwald-api-token: ${{ secrets.MITTWALD_API_TOKEN }}
-          mittwald-project-id: 'p-kpbj8e'
+          mittwald-project-id: 'p-XXXXXX'
 ```
