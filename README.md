@@ -10,7 +10,7 @@ It is especially useful when speed and simplicity matter: beginners can deploy w
 
 ```yaml
 - name: Deploy to Mittwald Container Hosting
-  uses: mittwald/rp-container-deploy-action@master
+  uses: mittwald/zerodeploy-action@master
   with:
     mittwald-api-token: ${{ secrets.MITTWALD_API_TOKEN }}
     mittwald-project-id: 'p-XXXXXX'
