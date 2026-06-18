@@ -1,5 +1,5 @@
-name: 'Zero-config deployment to mittwald container hosting'
-description: 'Builds and deploys an arbitrary repository as a container into a given mittwald project - Powered mittwald CLI.'
+name: 'mittwald zero-config deployment'
+description: 'Builds and deploys an arbitrary repository as a container into a given mittwald project. No Dockerfiles needed.'
 
 branding:
   icon: 'git-merge'
