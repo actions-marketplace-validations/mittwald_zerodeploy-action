@@ -22,9 +22,8 @@ It is especially useful when speed and simplicity matter: beginners can deploy w
 |-------|-------------|----------|---------|
 | `mittwald-api-token` | Mittwald API token for authentication | **yes** | – |
 | `mittwald-project-id` | Mittwald project ID to deploy to (e.g. `p-XXXXXX`) | **yes** | – |
-| `node-version` | Node.js version to use | no | `24` |
-| `mittwald-cli-branch` | Branch of the mittwald CLI to clone | no | `feat/containerize-deploy` |
-| `container-deploy-repo` | URL of the container-deploy repository | no | `https://github.com/mittwald/container-deploy` |
+| `node-version` | Node.js version to use. Typically only used for development and testing purposes. | no | `24` |
+| `mittwald-cli-version` | Version selector for mittwald CLI. Typically only used for development and testing purposes. | no | `^1.17.0` |
 | `repo-subpath` | Subpath within the repository to deploy (e.g. `./services/api`), relative to the repository root | no | `.` |
 
 ## Environment file handling
